@@ -1,0 +1,249 @@
+@font-face {
+    font-family: ROBO;
+    src: url(../../fonts/ROBO.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(26, 26, 26);
+}
+
+body {
+    font-family: 'Roboto Mono', sans-serif;
+    color: var(--light);
+    background-image: url(../img/remmmmm.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transition: 300ms ease-in-out;
+    transition: 300ms ease-out;
+}
+
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2.3rem;
+    font-weight: 900;
+    margin: -4px 0px;
+    line-height: 140%;
+}
+
+b {
+    font-weight: 700;
+}
+
+i {
+    font-display: swap;
+}
+
+
+
+#navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    opacity: .9;
+    min-height: 7vh;
+    position: fixed;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    -webkit-box-shadow: var(--shadow);
+            box-shadow: var(--shadow);
+    font-family: ROBO;
+}
+
+
+.logo {
+    width: 37px;
+    height: 37px;
+}
+
+.logo .jarvis-logo{
+    padding-top: 20%;
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    font-family: ROBO;
+    letter-spacing: .2rem;
+
+}
+
+
+.nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 27%;
+    margin-top: .1%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--navbar-link);
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: .1s ease-in;
+}
+
+.nav-links a:hover{
+    color: var(--iron-man-red);
+    cursor: pointer;
+}
+
+
+
+/* Banner CSS */
+
+.banner{
+    padding-top: 200px;
+    width: 100%;
+    height: 120vh;
+    background-position: center;
+    box-shadow: inset 0 0 0 9000px rgba(99, 93, 93, 0.3);
+
+}
+
+.banner h1{
+    font-size:6vw;
+    background: #ffffff;
+    opacity: .9;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    text-align: center;
+    font-family: ROBO;
+    letter-spacing: 1rem;
+
+}
+
+.banner h2{
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: ROBO;
+    padding-top: 15px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: .3rem;
+
+}
+
+.banner p{
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 15px 10px 10px 10px;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    font-weight: 500;
+}
+.iron-model{
+    width: 20%; 
+    height: 100vh; 
+    margin-left: 40%; 
+    z-index: 1;
+    padding-bottom: 200px;
+}
+
+#know-button{
+    padding: 10px 10px 10px 10px; 
+    margin-top: 20px; 
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: var(--navbar-black);
+    color: var(--light);
+    opacity: .7;
+    transition: .1s ease-in;
+}
+
+#know-button:hover{
+    opacity: 1;
+}
+
+
+
+/* About Us Section CSS */
+
+#desc{
+    height: 100vh;
+    background-color: rgb(22, 22, 22);
+    margin-top: -100px;
+    background-position: center; 
+    z-index: 9999;
+}
+
+.basic-model{
+    height: 80vh;
+    width: 500px;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+#about-main{
+    font-size: 5rem;
+    color: #fff;
+    font-family: ROBO;
+    text-align: center;
+    letter-spacing: .6rem;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#about-head{
+    font-family: ROBO;
+    color: var(--light);
+    font-size: 4rem;
+    line-height: 8rem;
+    letter-spacing: .5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+#about-p{
+    color: #fff;
+    font-weight: 500;
+    width: 80%;
+    text-align: center;
+    margin-left: 9%;
+    font-size: 1.4rem;
+}
+
+#about-button{
+    margin-left: 45%;
+}
